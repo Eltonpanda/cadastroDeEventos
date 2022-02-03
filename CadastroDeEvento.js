@@ -12,8 +12,9 @@ if (idadeParticipante >= 18){
     console.log ("Menor de 18 anos, cadastro não permitido")
 }
 
-let dataEvento = 30/01/2022
-if (dataEvento > 26/01/2022){
+let dataEvento = new Date ("02/15/2022")
+let dataHoje = new Date ()
+if (dataEvento > dataHoje){
     console.log ("Data permitida para evento, prosseguir com o cadastro")
 } else {
     console.log ("Data inválida. Por favor tente outra data")
